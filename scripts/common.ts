@@ -62,6 +62,14 @@ export const CLIENTS = [
   ...new Set(Object.values(GENERATORS).map((gen) => gen.client)),
 ];
 
+let verbose = false;
+export function setVerbose(v: boolean): void {
+  verbose = v;
+}
+
+export function isVerbose(): boolean {
+  return verbose;
+}
 
 /**
  * Splits a string for a given `delimiter` (defaults to `-`) and capitalize each

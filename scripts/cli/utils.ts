@@ -1,5 +1,5 @@
-import { CLIENTS, LANGUAGES } from "../common";
-import { Language } from "../types";
+import { CLIENTS, GENERATORS, LANGUAGES } from "../common";
+import { Generator, Language } from "../types";
 
 export const ALL = "all";
 export const PROMPT_LANGUAGES = [ALL, ...LANGUAGES];
@@ -28,6 +28,23 @@ export function getClientChoices(
   return language === ALL || language === 'javascript'
     ? clientList
     : withoutClinia;
+}
+
+export function generatorList({
+  language,
+  client,
+  clientList,
+}: {
+  language: AllLanguage;
+  client: string[];
+  clientList: string[];
+}): Generator[] {
+  const langsTodo = language === ALL ? LANGUAGES : [language];
+  const clientsTodo = client[0] === ALL ? clientList : client;
+
+  return langsTodo
+    .flatMap((lang) => clientsTodo.map((cli) => GENERATORS[`${lang}-${cli}`]))
+    .filter(Boolean);
 }
 
 export function transformSelection({ langArg, clientArg }: Args): Selection {

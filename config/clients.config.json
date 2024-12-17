@@ -1,0 +1,48 @@
+{
+  "go": {
+    "clients": [
+      "common",
+      "embed",
+      "rank",
+      "summarize"
+    ],
+    "folder": "clients/models-client-go",
+    "packageVersion": "1.0.0-beta.1",
+    "gitRepoId": "models-client-go"
+  },
+  "javascript": {
+    "clients": [
+      {
+        "name": "common",
+        "output": "clients/models-client-javascript/packages/client-common"
+      },
+      {
+        "name": "embed",
+        "output": "clients/models-client-javascript/packages/client-embed"
+      },
+      {
+        "name": "rank",
+        "output": "clients/models-client-javascript/packages/client-rank"
+      },
+      {
+        "name": "summarize",
+        "output": "clients/clinia-client-javascript/packages/client-summarize"
+      }
+    ],
+    "folder": "clients/models-client-javascript",
+    "npmNamespace": "@clinia",
+    "gitRepoId": "models-client-javascript",
+    "packageVersion": "1.0.0-beta.1"
+  },
+  "python": {
+    "clients": [
+      "common",
+      "embed",
+      "rank",
+      "summarize"
+    ],
+    "folder": "clients/models-client-python",
+    "packageVersion": "1.0.0-beta.1",
+    "gitRepoId": "models-client-python"
+  }
+}

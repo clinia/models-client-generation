@@ -1,4 +1,24 @@
 {
   "name": "models-client-generation",
-  "packageManager": "yarn@4.5.3"
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "scripts"
+  ],
+  "scripts": {
+    "cli": "yarn workspace scripts start",
+    "scripts:build": "yarn workspace scripts build",
+    "scripts:lint": "yarn workspace scripts lint"
+  },
+  "packageManager": "yarn@4.5.3",
+  "engines": {
+    "node": "^20.0.0",
+    "yarn": "^4.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2"
+  }
 }

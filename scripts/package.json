@@ -1,0 +1,19 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "start": "NODE_NO_WARNINGS=1 node dist/scripts/cli/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/spinnies": "^0.5.3",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "execa": "^9.5.2",
+    "spinnies": "^0.5.1",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.7.2"
+  }
+}

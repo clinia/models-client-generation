@@ -1,10 +1,11 @@
 {
   "go": {
     "clients": [
+      "chunker",
       "common",
-      "embed",
-      "rank",
-      "summarize"
+      "embedder",
+      "ranker",
+      "summarizer"
     ],
     "folder": "clients/models-client-go",
     "packageVersion": "1.0.0-beta.1",
@@ -13,20 +14,24 @@
   "javascript": {
     "clients": [
       {
+        "name": "chunker",
+        "output": "clients/models-client-javascript/packages/client-chunker"
+      },
+      {
         "name": "common",
         "output": "clients/models-client-javascript/packages/client-common"
       },
       {
-        "name": "embed",
-        "output": "clients/models-client-javascript/packages/client-embed"
+        "name": "embedder",
+        "output": "clients/models-client-javascript/packages/client-embedder"
       },
       {
-        "name": "rank",
-        "output": "clients/models-client-javascript/packages/client-rank"
+        "name": "ranker",
+        "output": "clients/models-client-javascript/packages/client-ranker"
       },
       {
-        "name": "summarize",
-        "output": "clients/clinia-client-javascript/packages/client-summarize"
+        "name": "summarizer",
+        "output": "clients/clinia-client-javascript/packages/client-summarizer"
       }
     ],
     "folder": "clients/models-client-javascript",
@@ -36,10 +41,11 @@
   },
   "python": {
     "clients": [
+      "chunker",
       "common",
-      "embed",
-      "rank",
-      "summarize"
+      "embedder",
+      "ranker",
+      "summarizer"
     ],
     "folder": "clients/models-client-python",
     "packageVersion": "1.0.0-beta.1",

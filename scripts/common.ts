@@ -15,6 +15,7 @@ export const CI = Boolean(process.env.CI);
 const ROOT_DIR = path.resolve(process.cwd(), '..');
 
 export const ROOT_ENV_PATH = path.resolve(ROOT_DIR, '.env');
+export const ROOT_PROTO_PATH = path.resolve(ROOT_DIR, 'proto');
 
 // Build `GENERATORS` from the `clients.config.json` file
 export const GENERATORS = Object.entries(clientsConfig).reduce(
